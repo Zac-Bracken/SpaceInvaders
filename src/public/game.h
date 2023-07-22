@@ -11,9 +11,9 @@ private:
 
 public:
     Game();
-    void renderEntity();
-    void die();
-    void shoot();
+    void setLevel();
+    void setScore();
+    void setGameState();
 };
 
 #endif
