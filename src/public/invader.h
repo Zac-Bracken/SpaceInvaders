@@ -10,6 +10,9 @@ private:
 
 public:
     Invader();
+    Invader(int worthPointsValue, int startingHealth, int startingSpeed, int entityID);
     void move();
     void dropDown();
-}
+};
+
+#endif

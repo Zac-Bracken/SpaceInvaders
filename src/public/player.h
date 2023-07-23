@@ -11,6 +11,9 @@ private:
 
 public:
     Player();
+    Player(int lives, int startingHealth, int startingSpeed, int entityID);
     void moveLeft();
     void moveRight();
-}
+};
+
+#endif
