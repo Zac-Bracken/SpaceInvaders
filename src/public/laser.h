@@ -10,5 +10,8 @@ private:
 
 public:
     Laser();
+    Laser(int startingHealth, int startingSpeed, int entityID);
     void fire();
 };
+
+#endif

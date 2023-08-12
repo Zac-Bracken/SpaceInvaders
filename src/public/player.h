@@ -14,6 +14,7 @@ public:
     Player(int lives, int startingHealth, int startingSpeed, int entityID);
     void moveLeft();
     void moveRight();
+    void renderPlayer(sf::RenderWindow gameWindow);
 };
 
 #endif

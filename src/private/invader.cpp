@@ -1,4 +1,4 @@
-#include "public/Invader.h"
+#include "public/invader.h"
 
 Invader::Invader(int worthPointsValue, int startingHealth, int startingSpeed, int entityId)
     : Entity(startingHealth, startingSpeed, entityId)

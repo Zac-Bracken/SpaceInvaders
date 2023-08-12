@@ -1,5 +1,7 @@
 #ifndef ENTITY_H
 #define ENTITY_H
+#include <SFML/Window.hpp>
+#include "SFML/Graphics.hpp"
 
 class Entity
 {
@@ -13,7 +15,8 @@ private:
 public:
     Entity();
     Entity(int startingHealth, int startingSpeed, int entityID);
-    void renderEntity();
+    void renderEntity(sf::RenderWindow &gameWindow, sf::Sprite entitySprite);
+    sf::Sprite createEntity(sf::RenderWindow &gameWindow, sf::Texture &texture);
     void die();
     void shoot();
 };
