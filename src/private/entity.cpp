@@ -11,7 +11,9 @@ Entity::Entity(int startingHealth, int startingSpeed, int entityID)
 
 sf::Sprite Entity::createEntity(sf::RenderWindow &gameWindow, sf::Texture &texture)
 {
-    sf::Sprite entitySprite;
+
+    // IF U CREATE TEXTURE AS A CLASS MEMBER YOU CAN KEEP THE TEXTURE IN SCOPE TRY THIS :)
+
     entitySprite.setTexture(texture);
     entitySprite.setScale(100 / entitySprite.getLocalBounds().width,
                           100 / entitySprite.getLocalBounds().height);
@@ -29,3 +31,4 @@ void Entity::die()
 {
     ;
 }
+

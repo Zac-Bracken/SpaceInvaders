@@ -17,6 +17,7 @@ public:
     Entity(int startingHealth, int startingSpeed, int entityID);
     void renderEntity(sf::RenderWindow &gameWindow, sf::Sprite entitySprite);
     sf::Sprite createEntity(sf::RenderWindow &gameWindow, sf::Texture &texture);
+    sf::Sprite entitySprite;
     void die();
     void shoot();
 };

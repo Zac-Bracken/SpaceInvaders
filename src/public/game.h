@@ -2,6 +2,8 @@
 #define GAME_H
 #include <SFML/Window.hpp>
 #include <public/player.h>
+#include <public/invader.h>
+#include <vector>
 
 class Game
 {
